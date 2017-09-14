@@ -7,7 +7,8 @@ Type|URL|Param
 POST|/promforbcm|alertJob: 监控对象，CPU 内存 服务状态 组合选择 alertSendType: 报警发送方式，短信、邮件 namespace: 租户 svcName: 服务 receiver: 报警接收者 alertDurationTime: 报警触发持续时间（默认5分钟） cpuThreshold: CPU阈值，如监控对象没有选择该项 可不填 memoryThreshold: 内存阈值，如监控对象没有选择该项 可不填
 #### 参数示例
 {
-    "alertJob": [
+ 
+ "alertJob": [
 	  "memory",
 	  "cpu",
 	  "svcStatus"
@@ -25,10 +26,14 @@ POST|/promforbcm|alertJob: 监控对象，CPU 内存 服务状态 组合选择 a
 #### 返回值
 成功|失败
 :-:|:-:
-{
- "tatus”:"200",
- "msg":"操作成功"
-}|{ "status”:"400", \"msg":"返回具体错误信息" }
+{  
+ "status”:"200",  
+ "msg":"操作成功"  
+}|{  
+ "status”:"400",,  
+ msg":"返回具体错误信息"  
+}
+
 
 # Prometheus [![Build Status](https://travis-ci.org/prometheus/prometheus.svg)][travis]
 

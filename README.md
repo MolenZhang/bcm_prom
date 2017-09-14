@@ -4,11 +4,17 @@
 ##### API
 Type|URL|Param
 :-:|:-:|:-:
-POST|/promforbcm|alertJob: 监控对象，CPU 内存 服务状态 组合选择 alertSendType: 报警发送方式，短信、邮件 namespace: 租户 svcName: 服务 receiver: 报警接收者 alertDurationTime: 报警触发持续时间（默认5分钟） cpuThreshold: CPU阈值，如监控对象没有选择该项 可不填 memoryThreshold: 内存阈值，如监控对象没有选择该项 可不填
+POST|/promforbcm|alertJob: 监控对象,CPU 内存 服务状态 组合选择  
+alertSendType: 报警发送方式，短信、邮件  
+namespace: 租户  
+svcName: 服务  
+receiver: 报警接收者  
+alertDurationTime: 报警触发持续时间(默认5分钟)  
+cpuThreshold: CPU阈值，如监控对象没有选择该项 可不填  
+memoryThreshold: 内存阈值，如监控对象没有选择该项 可不填
 #### 参数示例
 ```
- {
- 
+{
   "alertJob": [
     "memory",
 	"cpu",
@@ -17,23 +23,22 @@ POST|/promforbcm|alertJob: 监控对象，CPU 内存 服务状态 组合选择 a
   "alertSendType": {
 	 "email": "15757126197@163.com"
 	 },
-	 "namespace": "default",
-	 "svcName": "prometheus",
-	 "receiver": "MolenZhang",
-	 "alertDurationTime":"5m",
-	 "cpuThreshold":"2",
-	 "memoryThreshold":"1G"
- }
+  "namespace": "default",
+  "svcName": "prometheus",
+  "receiver": "MolenZhang",
+  "alertDurationTime":"5m",
+  "cpuThreshold":"2",
+  "memoryThreshold":"1G"
+}
 ```
 #### 返回值
-成功|失败
-:-:|:-:
+成功
 ```{  
  "status”:"200",  
  "msg":"操作成功"  
 }
 ```
-|
+失败
 ```
 {  
  "status”:"400",,  

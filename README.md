@@ -1,5 +1,5 @@
-## 查看修改源码 所支持的API接口文档，有助于帮助你了解本次提供的功能
-[API 帮助文档](https://www.zybuluo.com/MolenZhang/note/884995)
+## 查看API接口帮助文档，有助于你了解本次修改后所支持的功能
+请点击[API 帮助文档](https://www.zybuluo.com/MolenZhang/note/884995)查看~
 # Prometheus [![Build Status](https://travis-ci.org/prometheus/prometheus.svg)][travis]
 
 [

@@ -107,4 +107,4 @@ Apache License 2.0, see [LICENSE](https://github.com/prometheus/prometheus/blob/
 [circleci]: https://circleci.com/gh/prometheus/prometheus
 [quay]: https://quay.io/repository/prometheus/prometheus
 # prometheus
-provide web operation based on prometheus
+# bcm_prom
